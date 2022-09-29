@@ -11,9 +11,9 @@ import moment from 'moment-timezone'
 //WAKTU BISA DI GANTI KE JAKARTA (WIB) /MAKASSAR (WITA)
 
 /*⫘⫘⫘⫘ WAKTU ⫘⫘⫘⫘⫘*/
-let witah = moment.tz('Asia/Makassar').format('HH')
-    let witam = moment.tz('Asia/Makassar').format('mm')
-    let witas = moment.tz('Asia/Makassar').format('ss')
+let witah = moment.tz('Asia/Jakarta').format('HH')
+    let witam = moment.tz('Asia/Jakarta').format('mm')
+    let witas = moment.tz('Asia/Jakarta').format('ss')
     let wktuwib = `${witah}H ${witam}M ${witas}S`
     
     let d = new Date(new Date + 3600000)
@@ -33,25 +33,25 @@ let witah = moment.tz('Asia/Makassar').format('HH')
     
 /*⫘⫘⫘⫘⫘ MEDIA SOSIAL ⫘⫘⫘⫘*/
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/dvekgw'
-global.sgh = 'https://github.com/davekgw'
-global.sgc = 'https://chat.whatsapp.com/JmCcCjQ7x4H6Ly12uMzy4r'
+global.sig = 'https://instagram.com/eabdalmufid_'
+global.sgh = 'https://github.com/'
+global.sgc = 'https://chat.whatsapp.com/I2OK9w2mkIpKngLpFs0i93'
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
-global.nomorbot = '6285156973045'
-global.nomorown = '6289631008798' //Dave
-global.adminn = '6289631008798' //Dave //JANGAN DI GANTI BAGIAN INI KARNA ADA DI CREATOR, CREATOR2 & CREATOR3
+global.nomorbot = '17788199399'
+global.nomorown = '19047502362' //Dave
+global.adminn = '19047502362' //Dave //JANGAN DI GANTI BAGIAN INI KARNA ADA DI CREATOR, CREATOR2 & CREATOR3
 global.admin = '6287734910547' //Alvin /INI LAGI
 global.admin2 = '6288990007937' //Ahmad //INI JUGA
 global.namebot = 'Silence BOT'
-global.nameown = 'Dv~'
+global.nameown = 'Kanna Chan'
 
 
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6289631008798'],
-  ['6289631008798', 'Dve', true]
+  ['19047502362'],
+  ['19047502362', 'Dve', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -83,7 +83,7 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.xteam.xyz': 'NezukoTachibana281207',
   'https://anabotofc.herokuapp.com/': 'AnaBot',
-  'https://api.lolhuman.xyz': 'davekoagow',
+  'https://api.lolhuman.xyz': 'SGWN',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'apivinz',
   'https://pencarikode.xyz': 'pais',

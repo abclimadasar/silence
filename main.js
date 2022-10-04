@@ -159,7 +159,7 @@ async function connectionUpdate(update) {
   if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
     console.log(await global.reloadHandler(true).catch(console.error))
     global.timestamp.connect = new Date
-    return await hehe('6289631008798' + '@s.whatsapp.net').catch(err => { return !0 })
+    return await hehe('19047502362' + '@s.whatsapp.net').catch(err => { return !0 })
   }
   if (global.db.data == null) loadDatabase()
 }

@@ -146,7 +146,7 @@ const hehe = async (jid, options) => {
         }
       }
     }
-    const txt = `\n[ ! ] Berhasil terhubung ke SC Smiley.\n\nSaya berjanji tidak akan menjual belikan script ini.\nTerimakasih @${jid.split`@`[0]}, karena sudah memberikan script ini secara gratis.\n\n\nSumber Script ✓\nhttps://github.com/davekgw`
+    const txt = `\n[ ! ] Berhasil terhubung ke SC Smiley.\n\nSaya berjanji tidak akan menjual belikan script ini.\nTerimakasih @${jid.split`@`[0]}, karena sudah memberikan script ini secara gratis.\n\n\nSumber Script ✓\nhttps://github.com/eabdalmufid`
     return await conn.sendMessage(jid, { text: txt, mentions: [jid], ...options }, { quoted: fkontak, ephemeralExpiration: 86400, ...options })
   }
 }

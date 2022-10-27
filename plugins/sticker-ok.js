@@ -26,5 +26,5 @@ let stikerhuuu = [
  "https://telegra.ph/file/2ddc5b038d085f0553988.mp4",
  "https://telegra.ph/file/b9e69d96cfa6a73927ffd.png",
  "https://telegra.ph/file/506cabf7969bebf03e3b6.png",
- https://telegra.ph/file/f7f7b33fd6f38075f5b3b.png",
+ "https://telegra.ph/file/f7f7b33fd6f38075f5b3b.png",
 ]

@@ -8,7 +8,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /^(dave|dv|bot|Bot|Dave)$/i
+handler.customPrefix = /^(min|dv|bot|Bot|Min)$/i
 handler.command = new RegExp
 
 handler.fail = null

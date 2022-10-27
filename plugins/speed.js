@@ -71,7 +71,7 @@ ${readMore}
 
 *💻 Platform:* ${os.platform()}
 *🖨️ Server:* ${os.hostname()}
-By: DaveKgw
+By: AngelDark
 ${readMore}
 *${htjava} NodeJS Memory Usage*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}

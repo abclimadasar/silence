@@ -1,5 +1,5 @@
 // MADE BY BOCHILGAMING
-// RECODE BY DAVE
+// RECODE BY ANGELDARK
 
 import { promises } from 'fs'
 import { join } from 'path'
@@ -204,7 +204,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
       let c1 = `*〕•━────┐*`
       let c2 = `*│⌬*`
       let c3 = `*╰───···─────*❁\n`
-      let c4 = `\n*Dv~*\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     `
+      let c4 = `\n*AngelDark~*\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     `
       
       // LOGO L P
       let lprem = global.lopr

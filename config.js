@@ -1,4 +1,4 @@
-//SCRIPT RECODE BY DAVE💌
+// SCRIPT RECODE BY AngelDark💌
 // JANGAN DI HAPUS📣
 
 //GA TAU CARA EDIT NYA? CHAT AUTHOR↑↑↑
@@ -100,7 +100,7 @@ global.APIKeys = { // APIKey Here
 /*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
 //GANTI JANGAN NGASAL.
 global.wm = 'SilenceBOT' //Main Watermark
-global.wm2 = 'Dve~'
+global.wm2 = 'AngekDark~'
 global.wm3 = '❁ Silence'
 global.botdate = `⫹⫺ Date : ${week} ${date}`
 global.bottime = `Time : ${wktuwib}`
@@ -144,7 +144,7 @@ global.hsquere = ['⛶','❏','⫹⫺']
 
 /*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
 global.stickpack = '© By'
-global.stickauth = `Dve~`
+global.stickauth = `AngelDark~`
 global.multiplier = 100 // The higher, The harder levelup
 
 /*⫘⫘⫘⫘ GLOBAL EMOJI ⫘⫘⫘⫘⫘*/

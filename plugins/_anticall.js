@@ -18,4 +18,4 @@ export async function all(m) {
 		await delay(5000)
 		await this.updateBlockStatus(m.chat, "block")
 	}
-}
+} 

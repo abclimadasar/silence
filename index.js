@@ -16,12 +16,12 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 //BAGIAN INI BEBAS
-say('DAVEKGW', {
+say('ABDUL MUFID', {
   font: 'block',
   align: 'center',
   colors: ['blue']
 })
-say(`BOT Whatsapp Pribadi By Dve~`, { 
+say(`BOT Whatsapp Pribadi By AngelDark~`, { 
   font: 'console',
   align: 'center',
   colors: ['green']

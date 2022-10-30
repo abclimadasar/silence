@@ -1,15 +1,11 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-let info = `\n_Github Collab ADA_
+let info = `\n_Info Github_
 AngelDark :
 https://github.com/eabdalmufid
 
 _Owner_
-DaveKgw :
-https://github.com/davekgw
-KyamiCyx :
-https://github.com/ShionMDv
-Ahmad :
-https://github.com/CyexSynMD
+Abdul Mufid :
+https://github.com/eabdalmufid
 
 `.trim()
 

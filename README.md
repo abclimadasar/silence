@@ -12,6 +12,14 @@
 <p align="center">
 <a href=""><img title="Author" src="https://img.shields.io/badge/AUTHOR-AngelDark-blue.svg?style=for-the-badge&logo=github"></a>
 
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+ <p align="center">
+<img width="" src="https://img.shields.io/github/repo-size/eabdalmufid/Silence-Soft?color=red&label=Repo%20Size&style=for-the-badge&logo=appveyor">
+</p>
+<p align="center"><img src="https://profile-counter.glitch.me/{eabdalmufid}/count.svg" alt="eabdalmufid :: Visitor's Count" /></p>
+
+
 ---------
 ## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
   <a href="https://wa.me/19047502362">

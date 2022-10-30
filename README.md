@@ -72,7 +72,7 @@
 |--------|--------|
 | **heroku/nodejs** | Pilih begitu di heroku |
 | **FFMPEG** |[copy link here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [copy link here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
+| **IMAGEMAGICK** | [copy link here](https://github.com/mcollina/heroku-buildpack-imagemagick.git) |
 
 ## TERMUX USER
 ```bash
@@ -215,6 +215,7 @@ Set prefix
 * [`Adiwajshing`](https://github.com/adiwajshing/Baileys)
 * [`Nurutomo`](https://github.com/Nurutomo)
 * [`BochilGaming`](https://github.com/bochilgaming)
+* [`Abdul Mufid`](https://github.com/eabdalmufid)
 
 ## ```Recode By 💌```
 [![AngelDark](https://github.com/eabdalmufid.png?size=100)](https://github.com/eabdalmufid)

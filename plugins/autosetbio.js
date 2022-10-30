@@ -4,7 +4,7 @@
 	if (new Date() * 1 - setting.status > 1000) {
 		let _uptime = process.uptime() * 1000
 		let uptime = clockString(_uptime);
-		let bio = `🔥By Dv~ | 🚀Aktif selama ${uptime} | ${global.opts['self'] ? 'Private' : setting.self ? 'Private' : global.opts['gconly'] ? 'Hanya Grup' : 'Publik'} Mode`
+		let bio = `🔥By AngelDark | 🚀Aktif selama ${uptime} | ${global.opts['self'] ? 'Private' : setting.self ? 'Private' : global.opts['gconly'] ? 'Hanya Grup' : 'Publik'} Mode`
 		await this.setBio(bio).catch(_ => _)
 		setting.status = new Date() * 1
 	}

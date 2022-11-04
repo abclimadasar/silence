@@ -74,7 +74,7 @@
 * Scan Replit [`Click Here`](https://replit.com/@davekgw/SmileyBotz-QR-Code)
 
 ## ```Deploy Heroku```
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/eabdalmufid/Bot-Pribadi)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/eabdalmufid/Silence-Soft)
 
 | BuildPack | LINK |
 |--------|--------|
@@ -133,7 +133,7 @@ ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
 git clone https://github.com/eabdalmufid/Silence-Soft
-cd Bot-Pribadi
+cd Silence-Soft
 npm install
 npm update
 ```

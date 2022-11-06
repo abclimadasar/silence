@@ -229,7 +229,7 @@ Set prefix
 [![AngelDark](https://github.com/eabdalmufid.png?size=100)](https://github.com/eabdalmufid)
 
 ## ```Big Thanks To ✨```
-[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![AngelDark](https://github.com/eabdalmufid.png?size=100)](https://github.com/davekgw) | [![Amirul Dev](https://github.com/amiruldev20.png?size=100)](https://github.com/amiruldev20) | [![FangzXD](https://github.com/ShionMDv.png?size=100)](https://github.com/Fangzbotz2007) 
+[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![AngelDark](https://github.com/eabdalmufid.png?size=100)](https://github.com/eabdalmufid) | [![Amirul Dev](https://github.com/amiruldev20.png?size=100)](https://github.com/amiruldev20) | [![FangzXD](https://github.com/ShionMDv.png?size=100)](https://github.com/Fangzbotz2007) 
 ----|----|----|----
 [Nurutomo](https://https://github.com/Nurutomo) | [AngelDark](https://https://github.com/eabdalmufid) | [Amirul Dev](https://github.com/amiruldev20) | [FangzXD](https://github.com/Fangzbotz2007)
 Author / Creator | Recode Bot | Contributor | Contributor

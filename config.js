@@ -1,4 +1,4 @@
-// SCRIPT RECODE BY AngelDark💌
+// SCRIPT RECODE BY ANGELDARK💌
 // JANGAN DI HAPUS📣
 
 //GA TAU CARA EDIT NYA? CHAT AUTHOR↑↑↑
@@ -34,7 +34,7 @@ let witah = moment.tz('Asia/Jakarta').format('HH')
 /*⫘⫘⫘⫘⫘ MEDIA SOSIAL ⫘⫘⫘⫘*/
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 global.sig = 'https://instagram.com/eabdalmufid_'
-global.sgh = 'https://github.com/'
+global.sgh = 'https://github.com/eabdalmufid'
 global.sgc = 'https://chat.whatsapp.com/I2OK9w2mkIpKngLpFs0i93'
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
@@ -51,7 +51,7 @@ global.nameown = 'Kanna Chan'
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
   ['19047502362'],
-  ['19047502362', 'Dve', true]
+  ['19047502362', 'AngelDark', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?

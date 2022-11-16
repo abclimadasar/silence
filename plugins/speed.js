@@ -50,7 +50,7 @@ let handler = async (m, { conn, isRowner}) => {
   await m.reply(`${htjava} *T e s t i n g. . .*`)
   let neww = performance.now()
   let speed = neww - old
-  await conn.sendHydrated(m.chat,`
+  conn.sendButton(m.chat, `
 ${htjava} *PING*
 ${speed}ms
 
@@ -59,19 +59,18 @@ ${muptime}
 ${readMore}
 ━━━━━━▢ *ROOM* ▢━━━━━━
 💬 *${groupsIn.length}* Group Chats
-⮕ *${groupsIn.length}* Groups Joined
-⮕ *${groupsIn.length - groupsIn.length}* Groups Left
-⮕ *${chats.length - groupsIn.length}* Personal Chats
-⮕ *${chats.length}* Total Chats
+• *${groupsIn.length}* Groups Joined
+• *${groupsIn.length - groupsIn.length}* Groups Left
+• *${chats.length - groupsIn.length}* Personal Chats
+• *${chats.length}* Total Chats
 
 
 ━━━━━━▢ *SERVER* ▢━━━━━━
-*⩩ RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
-*⩩ FreeRAM:* ${format(freemem())}
+*• RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
+*• FreeRAM:* ${format(freemem())}
 
 *💻 Platform:* ${os.platform()}
 *🖨️ Server:* ${os.hostname()}
-By: AngelDark
 ${readMore}
 *${htjava} NodeJS Memory Usage*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
@@ -81,12 +80,12 @@ ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type =>
 
 _CPU Core(s) Usage (${cpus.length} Core CPU)_
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
-`,wm, null, sgh, 'SilenceBOT~', null,null, [['Menu','.menu'],[null,null],[null,null]], m)
+`, '© Copyright 2022 | AngelDark', [['Menu', '.menu2'], ['Owner', '.owner']], m, false, { FileLength: 9999999999999999 })
 }
-handler.help = ['ping']
+handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
 
-handler.command = /^(ping)$/i
+handler.command = /^(ping|speed)$/i
 export default handler
 
 const more = String.fromCharCode(8206)

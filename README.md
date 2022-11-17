@@ -74,7 +74,7 @@
 * Scan Replit [`Click Here`](https://replit.com/@davekgw/SmileyBotz-QR-Code)
 
 ## ```Deploy Heroku```
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/eabdalmufid/Silence-Soft)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/eabdalmufid/Silence-MultiDevice)
 
 | BuildPack | LINK |
 |--------|--------|

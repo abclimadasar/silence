@@ -19,8 +19,10 @@
 </p>
 <p align="center"><img src="https://profile-counter.glitch.me/{eabdalmufid}/count.svg" alt="eabdalmufid :: Visitor's Count" /></p>
 
+> **Note**: 
+> Nama Session? Silahkan Tanya ke Nomor Owner di Bawah!
 
----------
+
 ## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
   <a href="https://wa.me/19047502362">
     <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />

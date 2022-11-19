@@ -1,7 +1,7 @@
 <p align="center">
     <img src="https://i.postimg.cc/wM03CSP6/07bc58660f1011cecfdc30809a4ddb15.gif" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">Smiley-MD</h1>
+<h2 align="center">Silence-MultiDevice</h2>
 <p align="center">
   <a href="https://github.com/eabdalmufid"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Smiley+Multi+Device;Base+ori+by+BochilGaming;Recode+By+AngelDark;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="UwU">
 </p>

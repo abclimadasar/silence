@@ -581,6 +581,8 @@ esteh: 0,
                     chat.delete = true
                 if (!('antiLink' in chat))
                     chat.antiLink = false
+                if (!('antiVirtex' in chat))
+                    chat.antiVirtex = false
                 if (!('antiSticker' in chat)) 
                     chat.antiSticker = false
                 if (!('viewonce' in chat))
@@ -606,6 +608,7 @@ esteh: 0,
                     sDemote: '',
                     delete: true,
                     antiLink: false,
+                    antiVirtex: false,
                     antiSticker: false,
                     viewonce: false,
                     antiBadword: true,
@@ -700,7 +703,7 @@ esteh: 0,
                     for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                         let data = (await conn.onWhatsApp(jid))[0] || {}
                         if (data.exists)
-                            m.reply(`*Plugin:* ${name}\n*Sender:* ${m.sender}\n*Chat:* ${m.chat}\n*Command:* ${m.text}\n\n\`\`\`${format(e)}\`\`\``.trim(), data.jid)
+                            m.reply(` *Plugin:* ${name}\n*Sender:* ${m.sender}\n*Chat:* ${m.chat}\n*Command:* ${m.text}\n\n\`\`\`${format(e)}\`\`\``.trim(), data.jid)
                     }
                 }
             }
@@ -821,7 +824,7 @@ esteh: 0,
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `*[ ! ] Limit anda sudah habis*\nKumpulkan *Money* dan tukarkan uang menjadi limit.\n\n Money 30000 = 1 Limit\n\nUntuk menukarkan ketik *${usedPrefix}buylimit(angka limit)*\n• Contoh: *.buylimit20* `, m)
+                    this.reply(m.chat, `*[ ! ] Limit anda sudah habis*\nKumpulkan *Money* dan tukarkan uang menjadi limit.\n\n Money 3000 = 1 Limit\n\nUntuk menukarkan ketik *${usedPrefix}buylimit(angka limit)*\n• Contoh: *.buylimit20* `, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
@@ -867,7 +870,7 @@ esteh: 0,
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*️Plugin:* ${m.plugin}\n*Sender:* ${m.sender}\n*Chat:* ${m.chat}\n*Command:* ${usedPrefix}${command} ${args.join(' ')}\n*Error Logs:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
+                                    m.reply(` *Plugin:* ${m.plugin}\n*Sender:* ${m.sender}\n*Chat:* ${m.chat}\n*Command:* ${usedPrefix}${command} ${args.join(' ')}\n*Error Logs:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -881,7 +884,7 @@ esteh: 0,
                         }
                     }
                     if (m.limit)
-                        m.reply(' ️Kamu menggunakan fitur limit\n╰► - 1 Limit')
+                        m.reply('Kamu menggunakan fitur limit\n⌬  -1 Limit')
                 }
                 break
             }
@@ -956,34 +959,56 @@ export async function participantsUpdate({ id, participants, action }) {
     let chat = global.db.data.chats[id] || {}
     let text = ''
     switch (action) {
-        case 'add':
+                case 'add':
         case 'remove':
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = './src/avatar_contact.png'
+                    let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat Datang, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
-                            (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user!')).replace('@user', `${this.getName(user)}`)
-                        let wel = API('hardianto', '/api/welcome3', {
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
+                            (chat.sBye || this.bye || conn.bye || 'Bye @user')).replace(/@user/g, '@' + user.split`@`[0])
+                        let wel = API('males', '/welcome2', {
                                 profile: pp,
-                                name: await this.getName(user),
-                                bg: 'https://i.postimg.cc/26rSWSkF/1658661134391.jpg',
-                                namegb: await this.getName(id),
-                                member: groupMetadata.participants.length
+                                username: await this.getName(user),
+                                background: 'https://telegra.ph/file/7f827ca45c833542777f0.jpg',
+                                groupname: await this.getName(id),
+                                membercount: groupMetadata.participants.length
                             })
-                            let lea = API('hardianto', '/api/goodbye3', {
+                            let lea = API('males', '/goodbye2', {
                                 profile: pp,
-                                name: await this.getName(user),
-                                bg: 'https://i.postimg.cc/26rSWSkF/1658661134391.jpg',
-                                namegb: await this.getName(id),
-                                member: groupMetadata.participants.length
+                                username: await this.getName(user),
+                                background: 'https://telegra.ph/file/7f827ca45c833542777f0.jpg',
+                                groupname: await this.getName(id),
+                                membercount: groupMetadata.participants.length
                             })
-                            // ----- ENC :v -------
-                        const _0x3332b6=_0x2c3f;(function(_0x57f48d,_0x3546d8){const _0x4da5c2=_0x2c3f,_0x5b6297=_0x57f48d();while(!![]){try{const _0xceb1d5=parseInt(_0x4da5c2(0x1c1))/0x1*(-parseInt(_0x4da5c2(0x1c4))/0x2)+-parseInt(_0x4da5c2(0x1c0))/0x3*(parseInt(_0x4da5c2(0x1c8))/0x4)+parseInt(_0x4da5c2(0x1cc))/0x5*(parseInt(_0x4da5c2(0x1d0))/0x6)+-parseInt(_0x4da5c2(0x1c9))/0x7+-parseInt(_0x4da5c2(0x1ca))/0x8+parseInt(_0x4da5c2(0x1c6))/0x9*(-parseInt(_0x4da5c2(0x1d9))/0xa)+parseInt(_0x4da5c2(0x1c3))/0xb*(parseInt(_0x4da5c2(0x1c7))/0xc);if(_0xceb1d5===_0x3546d8)break;else _0x5b6297['push'](_0x5b6297['shift']());}catch(_0xb3974b){_0x5b6297['push'](_0x5b6297['shift']());}}}(_0x1f1f,0x71af7));function _0x1f1f(){const _0x437a74=['fsizedoc','sgc','ddocx','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20「\x20ᴡ\x20ᴇ\x20ʟ\x20ᴄ\x20ᴏ\x20ᴍ\x20ᴇ\x20」','.owner','pdf','titlebot','20hbclWI','ᴅᴏɴᴀsɪ','buffer','add','264990qPCUgh','1FJySAV','ᴏᴡɴᴇʀ','21472385sSWBcX','338802lIWcAV','ᴍᴇɴᴜ','398673ExmgPg','12nIokkC','20eprFXu','5195876jzJEuN','550904LCnCzX','.donasi','30495rpFhhV','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20「\x20ɢ\x20ᴏ\x20ᴏ\x20ᴅ\x20\x20ʙ\x20ʏ\x20ᴇ」','.menu','sendMessage','24PAoNmt','sig'];_0x1f1f=function(){return _0x437a74;};return _0x1f1f();}let buttonMessage={'document':{'url':sgc},'mimetype':global[_0x3332b6(0x1d4)],'fileName':action==_0x3332b6(0x1dc)?_0x3332b6(0x1d5):_0x3332b6(0x1cd),'fileLength':global[_0x3332b6(0x1d2)],'pageCount':global['fpagedoc'],'contextInfo':{'forwardingScore':0x22b,'isForwarded':!![],'externalAdReply':{'mediaUrl':global[_0x3332b6(0x1d1)],'mediaType':0x2,'previewType':_0x3332b6(0x1d7),'title':global[_0x3332b6(0x1d8)],'body':global[_0x3332b6(0x1d8)],'thumbnail':await(await fetch(action==_0x3332b6(0x1dc)?wel:lea))[_0x3332b6(0x1db)](),'sourceUrl':global[_0x3332b6(0x1d3)]}},'caption':text,'footer':global['botdate'],'buttons':[{'buttonId':_0x3332b6(0x1ce),'buttonText':{'displayText':_0x3332b6(0x1c5)},'type':0x1},{'buttonId':_0x3332b6(0x1d6),'buttonText':{'displayText':_0x3332b6(0x1c2)},'type':0x1},{'buttonId':_0x3332b6(0x1cb),'buttonText':{'displayText':_0x3332b6(0x1da)},'type':0x1}],'headerType':0x6};function _0x2c3f(_0x406bfd,_0x5c1f55){const _0x1f1f9f=_0x1f1f();return _0x2c3f=function(_0x2c3fe1,_0x434357){_0x2c3fe1=_0x2c3fe1-0x1c0;let _0x3cb1a9=_0x1f1f9f[_0x2c3fe1];return _0x3cb1a9;},_0x2c3f(_0x406bfd,_0x5c1f55);}this[_0x3332b6(0x1cf)](id,buttonMessage,{'quoted':![],'mentionedJid':[user]});
+                            
+ /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: 'https://instagram/b4c00t4an_s3l3b',
+    mediaType: 2, 
+    description: sgc,
+    title: 'Hᴀʟᴏ Nɢᴀʙ',
+    body: wm,
+    thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
+    sourceUrl: sgc
+     }}
+  })*/
+  let welcom = 'https://telegra.ph/file/35f17bb371d308504bc46.jpg'
+  let godbye = 'https://telegra.ph/file/b44e48066aed4fb7ad291.jpg'
+  conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), text, author, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: sgc,
+    mediaType: 2, 
+    description: sgc,
+    title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
+    body: wm,
+    thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
+    sourceUrl: sgc
+     }}
+  })
+  
                     }
                 }
             }
@@ -996,6 +1021,22 @@ export async function participantsUpdate({ id, participants, action }) {
             text = text.replace('@user', '@' + participants[0].split('@')[0])
             if (chat.detect)
                 this.sendMessage(id, { text, mentions: this.parseMention(text) })
+/*let flaaa2 = [
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=',
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text=',
+'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
+'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=']
+conn.sendButtonImg(id, `${pickRandom(flaaa2)}` + `Congratulation ` + '@user', 'Sᴇʟᴀᴍᴀᴛ Nᴀɪᴋ Jᴀʙᴀᴛᴀɴ', text, mentions: this.parseMention(text), { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: 'https://facebook.com/sadtime098',
+    mediaType: 2, 
+    description: sgc,
+    title: "Jᴀɴɢᴀɴ Lᴜᴘᴀ Mᴀɴᴅɪ!!",
+    body: wm,
+    thumbnail: fs.readFileSync('./thumbnail.jpg'),
+    sourceUrl: sgc
+     }}
+  })*/
             break
     }
 }
@@ -1058,10 +1099,10 @@ global.dfail = (type, m, conn) => {
         restrict: '*Restrict Belum Nyala !*',
     }[type]
     if (msg) return conn.reply(m.chat, msg, false, { quoted: m, contextInfo: { externalAdReply: { showAdAttribution: true,
-mediaUrl: 'https://instagram.com/dvekgw',
+mediaUrl: 'https://instagram.com/eabdalmufid_',
 title: wm,
 body: titlebot,
-sourceUrl: 'https://chat.whatsapp.com/CUZny6ag4RNIz62t8GZpVy'
+sourceUrl: 'https://chat.whatsapp.com/L5jhSrREsbjCV2es6mSTG6'
   }
  } 
 })

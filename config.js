@@ -35,23 +35,23 @@ let witah = moment.tz('Asia/Jakarta').format('HH')
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 global.sig = 'https://instagram.com/eabdalmufid_'
 global.sgh = 'https://github.com/eabdalmufid'
-global.sgc = 'https://chat.whatsapp.com/I2OK9w2mkIpKngLpFs0i93'
+global.sgc = 'https://chat.whatsapp.com/L5jhSrREsbjCV2es6mSTG6'
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
-global.nomorbot = '17788199399'
-global.nomorown = '19047502362' //Dave
-global.adminn = '19047502362' //Dave //JANGAN DI GANTI BAGIAN INI KARNA ADA DI CREATOR, CREATOR2 & CREATOR3
-global.admin = '6287734910547' //Alvin /INI LAGI
-global.admin2 = '6288990007937' //Ahmad //INI JUGA
+global.nomorbot = '6287782860002'
+global.nomorown = '7981421237' 
+global.adminn = '7981421237' 
+global.admin = '79814212377' 
+global.admin2 = '7981421237' 
 global.namebot = 'Silence BOT'
 global.nameown = 'Kanna Chan'
 
 
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['19047502362'],
-  ['19047502362', 'AngelDark', true]
+  ['79814212377'],
+  ['79814212377', 'AngelDark', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -105,7 +105,7 @@ global.wm3 = '❁ Silence'
 global.botdate = `⫹⫺ Date : ${week} ${date}`
 global.bottime = `Time : ${wktuwib}`
 global.titlebot = '🌱 𝙍𝙋𝙂 | Whatsapp Bot'
-global.author = '©ADA-MD'
+global.author = '© AngelDark'
 
 
 /*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/

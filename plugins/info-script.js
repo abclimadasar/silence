@@ -5,21 +5,7 @@ let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 
 let handler = async function (m, { text, usedPrefix, command }) {
 
-let info = `*╭────━•〔* *SILENCE* *〕•━────┐*
-*│𖥂* *Script :*
-*│*     bit.ly/3BP1wh2
-*│𖥂* *Node_Modules:*
-*│*     bit.ly/3Gu4tFz
-*│𖥂* *Base :* 
-*│*     bit.ly/3ja6gr8
-*│𖥂* *Free Panel :* 
-*│*     bit.ly/3VehFES
-*╰─═┅═━───···─────๑*
-
-📍 *N o t e :* 
-• Jika menemukan bug di script, harap lapor owner
-• Join grup official: bit.ly/Grup-Botz
-• Bot ini free untuk digunakan, kecuali yang mau unlimited limit :)`
+let info = `*╭────━•〔* *SILENCE* *〕•━────┐*\n*│𖥂* *Script :*\n*│*     bit.ly/3BP1wh2\n*│𖥂* *Node_Modules:*\n*│*     bit.ly/3Gu4tFz\n*│𖥂* *Base :* \n*│*     bit.ly/3ja6gr8\n*│𖥂* *Free Panel :* \n*│*     bit.ly/3VehFES\n*╰─═┅═━───···─────๑*\n\n📍 *N o t e :* \n• Jika menemukan bug di script, harap lapor owner\n• Join grup official: bit.ly/GROUPBOT\n• Bot ini free untuk digunakan, kecuali yang mau unlimited limit :)`
 let kled = `https://telegra.ph/file/ff053a2dff6c14bcb0578.jpg`
 let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 

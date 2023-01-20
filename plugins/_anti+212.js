@@ -25,7 +25,7 @@ conn.reply('Maaf BOT ini hanya untuk Nomor Indonesia')
 conn.groupParticipantsUpdate(m.chat, [m.sender], "remove")
    } 
     
-    if (m.sender.startsWith('7' || '7')) {
+    if (m.sender.startsWith('94' || '94')) {
    	global.db.data.users[m.sender].banned = true
 conn.reply('Maaf BOT ini hanya untuk Nomor Indonesia')
 conn.groupParticipantsUpdate(m.chat, [m.sender], "remove")
